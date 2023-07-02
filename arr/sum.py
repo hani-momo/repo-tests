@@ -14,3 +14,11 @@ class ArrSolution:
 
     def subtract2int(self, a, b : int) -> int:
         return b -a
+
+## https://www.geeksforgeeks.org/check-if-a-number-is-palindrome/2
+##
+##
+##
+
+    def isPalindrome(self, x: int) -> bool:
+        return False

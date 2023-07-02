@@ -38,4 +38,15 @@ class TestArr(unittest.TestCase):
     ##  leetcode .. 
     def test_subtract2int(self):
         a, b = 3, 2
-        self.assertEqual(self.solution.subtract2int(b, a), 1)
+        self.assertEqual(self.solution.subtract2int( b, a), 1)
+
+    # Given an integer x, return true if x is a palindrome , and false otherwise.
+    ##
+    ## https://www.geeksforgeeks.org/check-if-a-number-is-palindrome/
+    ## https://realpython.com/python-testing/#how-to-structure-a-simple-test
+    ##
+
+    def test_isPalindrome(self):
+        self.assertEqual(self.solution.isPalindrome(121), True, "121")
+        self.assertEqual(self.solution.isPalindrome(-121), False, "-121")
+        self.assertEqual(self.solution.isPalindrome(10), False, "10")
