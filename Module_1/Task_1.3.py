@@ -11,4 +11,3 @@ result = (a * c) + (b * (not c)) # наибольшее число, тк True ==
 # not c == not True / not False
 print(result, 'is the biggest number')
 
-_main_
