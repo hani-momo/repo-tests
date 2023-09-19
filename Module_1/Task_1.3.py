@@ -5,8 +5,10 @@
 
 a = float(input('Enter your first num: '))
 b = float(input('Enter your second num: '))
-c = (a > b) # вернет True или False
+c = a > b # вернет True или False
 
 result = (a * c) + (b * (not c)) # наибольшее число, тк True == 1 или False == 0;
 # not c == not True / not False
 print(result, 'is the biggest number')
+
+_main_
