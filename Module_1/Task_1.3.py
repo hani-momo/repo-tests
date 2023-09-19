@@ -3,8 +3,8 @@
 Помните, что результатом сравнения является True или False (тип bool). При этом True эквивалентно 1, а False 0 при умножении. 
 '''
 
-a = float(input('Enter your first num: '))
-b = float(input('Enter your second num: '))
+a = input('Enter your first num: ')
+b = input('Enter your second num: ')
 c = a > b # вернет True или False
 
 result = (a * c) + (b * (not c)) # наибольшее число, тк True == 1 или False == 0;
