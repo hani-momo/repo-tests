@@ -14,18 +14,4 @@ elif x == y or y == z or x == z:
 else:
    print(0)
 
-# или
 
-x = int(input('1st number: '))
-y = int(input('2nd number: '))
-z = int(input('3rd number: '))
-result = 0
-
-if x == y == z:
-   result +=3
-elif x == y or y == z or x == z:
-   result +=2
-else:
-   result
-
-print(result)
