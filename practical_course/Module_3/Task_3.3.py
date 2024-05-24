@@ -1,15 +1,19 @@
-def sort_mas(mas):
-    mas = mas.split(',')
+def compare(a, b):
+    return str(a) + str(b) > str(b) + str(a)
 
-    mas = [int(x) for x in mas]
+def max_num(numbers):
+    for i in range(len(numbers)):
+        item = numbers[i]  
+        j = i  
 
-    m = sorted([str(x) for x in mas], reverse=True)
+        while j > 0 and compare(item, numbers[j - 1]):
+            numbers[j] = numbers[j - 1] 
+            j -= 1  
 
-    number = ''.join(m)
+        numbers[j] = item  
 
-    return number
+    result = ''.join(str(x) for x in numbers)  
+    print(result)  
 
-mas = input('Your numbers with comma: ')
-
-result = sort_mas(mas)
-print(result)
+array = [21, 22, 2, 29]  
+max_num(array)  
