@@ -60,12 +60,12 @@ print('Query: Students older than 30 years')
 for student in query:
     print(student.name, student.surname, student.age)
 
-query = (Student.select().join(StudentCourse).join(Course).where(Course.name == 'python'))
+query = (Students.select().join(StudentCourses).join(Courses).where(Courses.name == 'python'))
 print('Query: Students attending Python course')
 for student in query:
     print(student.name, student.surname, student.age, student.city)
 
-query = (Student.select().join(StudentCourse).join(Course).where((Course.name == 'python'), (Student.city == 'Spb')))
+query = (Students.select().join(StudentCourses).join(Courses).where((Courses.name == 'python'), (Students.city == 'Spb')))
 print('Query: Students attending Python course and from Spb')
 for student in query:
     print(student.name, student.surname, student.age, student.city)
